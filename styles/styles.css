@@ -1,0 +1,114 @@
+body {
+    background: linear-gradient(0deg, #5c9dff, #d0deff);
+    background-attachment: fixed;
+}
+
+.weather-info-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 420px;
+
+    background: #fff;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 0 40px rgb(219, 219, 255);
+}
+
+.weather-info-container > * {
+    margin: 0 auto;
+}
+
+.weather-info-container > * > * {
+    margin: 0 auto;
+}
+
+.weather-info-container > #city-location-input {
+    width: 80%;
+
+    outline: none;
+    border: none;
+    border-radius: 12.5px;
+
+    background: #eeeeee;
+
+    font-size: 20px;
+    font-family: "noto sans", monospace;
+
+    padding: 20px;
+}
+
+.weather-info-container > .weather-graphical-info-container {
+    width: calc(80% + 40px);
+    border: 3px solid #eeeeee;
+
+    border-radius: 17.5px;
+
+    margin: 20px auto;
+}
+
+.weather-info-container > .weather-graphical-info-container > #weather-graphical-showcase {
+    border-radius: 12.5px;
+
+    margin: 20px 0 0 0;
+}
+
+.weather-info-container > .weather-graphical-info-container > #weather-textual-info {
+    border-radius: 12.5px;
+    background: #eeeeee;
+
+    padding: 10px 20px;
+
+    font-family: "comfortaa", monospace;
+    font-size: 16px;
+}
+
+.weather-info-container > .fine-weather-info-container {
+    width: calc(80% + 40px);
+
+    border-radius: 17.5px;
+
+    margin: 0px auto;
+
+    padding: 0px 0;
+}
+
+.weather-info-container > .fine-weather-info-container > * {
+    margin: 20px 0;
+    border-radius: 22.5px;
+    border: 3px solid #eeeeee;
+
+    
+    background: #f1f1f1;
+}
+
+.weather-info-container > .fine-weather-info-container > * > .fine-weather-info {
+    font-size: 20px;
+    font-family: "comfortaa", monospace;
+
+    padding: 15px 20px;
+}
+
+.divider-line {
+    width: 40px;
+    height: 8px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: #b1b1b1;
+}
+
+@media only screen and (max-width: 600px) {
+    .weather-info-container {
+        width: 300px;
+        margin: 50px 0;
+    }
+}

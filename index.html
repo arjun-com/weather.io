@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather.io</title>
+
+    <link rel="stylesheet" href="./styles/defaults.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <script src="./scripts/api_interaction.js" defer></script>
+    <script src="./scripts/weather_DOM_update.js" defer></script>
+</head>
+<body>
+    <div class = "weather-info-container">
+        <input placeholder="Enter your city" type="text" id="city-location-input"><br>
+    
+        <div class = "weather-graphical-info-container">
+            <img src="./images/symbol_questionmark.png" alt="Image Showcase According To City's Weather" id="weather-graphical-showcase"><br>
+            <p id = "weather-textual-info">—</p>
+        </div>
+
+        <hr class = "divider-line">
+
+        <div class = "fine-weather-info-container">
+            <div class = "temperature-info-container">
+                <p class="fine-weather-info" id = "temperature-info">The Temperature is ?</p>
+            </div>
+
+            <div class = "humidity-info-container">
+                <p class="fine-weather-info" id = "humidity-info">The Humidity is ?</p>
+            </div>
+
+            <div class = "wind-info-container">
+                <p class="fine-weather-info" id = "wind-speed-info">The Wind is ?</p>
+                <p class="fine-weather-info" id = "wind-dir-info">Coming from ?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
